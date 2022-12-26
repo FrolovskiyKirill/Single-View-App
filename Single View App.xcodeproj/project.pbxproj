@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6658BC55A69FA29D6772C611 /* Pods_Single_View_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF9C5FA9840C27D0B7DAC693 /* Pods_Single_View_App.framework */; };
 		EDC1FAA829599D540006D4D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1FAA729599D540006D4D4 /* AppDelegate.swift */; };
 		EDC1FAAA29599D540006D4D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1FAA929599D540006D4D4 /* SceneDelegate.swift */; };
 		EDC1FAAC29599D540006D4D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1FAAB29599D540006D4D4 /* ViewController.swift */; };
@@ -18,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DAB073338C9FF9F444513A6 /* Pods-Single View App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Single View App.debug.xcconfig"; path = "Target Support Files/Pods-Single View App/Pods-Single View App.debug.xcconfig"; sourceTree = "<group>"; };
+		82F2868684041E36E9BE0A55 /* Pods-Single View App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Single View App.release.xcconfig"; path = "Target Support Files/Pods-Single View App/Pods-Single View App.release.xcconfig"; sourceTree = "<group>"; };
+		AF9C5FA9840C27D0B7DAC693 /* Pods_Single_View_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Single_View_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC1FAA429599D540006D4D4 /* Single View App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Single View App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC1FAA729599D540006D4D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDC1FAA929599D540006D4D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,12 +39,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6658BC55A69FA29D6772C611 /* Pods_Single_View_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B53B249FEEE11B1317805F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1DAB073338C9FF9F444513A6 /* Pods-Single View App.debug.xcconfig */,
+				82F2868684041E36E9BE0A55 /* Pods-Single View App.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DC9E5FCB915323F466C4EDB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF9C5FA9840C27D0B7DAC693 /* Pods_Single_View_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EDC1FA9B29599D540006D4D4 = {
 			isa = PBXGroup;
 			children = (
@@ -48,6 +71,8 @@
 				EDC1FAC029599E3F0006D4D4 /* Swift.gitignore */,
 				EDC1FAA629599D540006D4D4 /* Single View App */,
 				EDC1FAA529599D540006D4D4 /* Products */,
+				0B53B249FEEE11B1317805F0 /* Pods */,
+				DC9E5FCB915323F466C4EDB5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDC1FAB829599D560006D4D4 /* Build configuration list for PBXNativeTarget "Single View App" */;
 			buildPhases = (
+				0CE35BD2D22D2D310020DD7D /* [CP] Check Pods Manifest.lock */,
 				EDC1FAA029599D540006D4D4 /* Sources */,
 				EDC1FAA129599D540006D4D4 /* Frameworks */,
 				EDC1FAA229599D540006D4D4 /* Resources */,
+				487ADC7EB426DD6338B741A5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CE35BD2D22D2D310020DD7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Single View App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		487ADC7EB426DD6338B741A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Single View App/Pods-Single View App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Single View App/Pods-Single View App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Single View App/Pods-Single View App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EDC1FAA029599D540006D4D4 /* Sources */ = {
@@ -290,6 +359,7 @@
 		};
 		EDC1FAB929599D560006D4D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DAB073338C9FF9F444513A6 /* Pods-Single View App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,6 +388,7 @@
 		};
 		EDC1FABA29599D560006D4D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82F2868684041E36E9BE0A55 /* Pods-Single View App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
