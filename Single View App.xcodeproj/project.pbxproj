@@ -13,6 +13,8 @@
 		EDC1FAAF29599D540006D4D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC1FAAD29599D540006D4D4 /* Main.storyboard */; };
 		EDC1FAB129599D560006D4D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC1FAB029599D560006D4D4 /* Assets.xcassets */; };
 		EDC1FAB429599D560006D4D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC1FAB229599D560006D4D4 /* LaunchScreen.storyboard */; };
+		EDC1FAC129599E3F0006D4D4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EDC1FABF29599E3F0006D4D4 /* README.md */; };
+		EDC1FAC229599E3F0006D4D4 /* Swift.gitignore in Resources */ = {isa = PBXBuildFile; fileRef = EDC1FAC029599E3F0006D4D4 /* Swift.gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		EDC1FAB029599D560006D4D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDC1FAB329599D560006D4D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDC1FAB529599D560006D4D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC1FABF29599E3F0006D4D4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EDC1FAC029599E3F0006D4D4 /* Swift.gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Swift.gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,8 @@
 		EDC1FA9B29599D540006D4D4 = {
 			isa = PBXGroup;
 			children = (
+				EDC1FABF29599E3F0006D4D4 /* README.md */,
+				EDC1FAC029599E3F0006D4D4 /* Swift.gitignore */,
 				EDC1FAA629599D540006D4D4 /* Single View App */,
 				EDC1FAA529599D540006D4D4 /* Products */,
 			);
@@ -125,8 +131,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC1FAC229599E3F0006D4D4 /* Swift.gitignore in Resources */,
 				EDC1FAB429599D560006D4D4 /* LaunchScreen.storyboard in Resources */,
 				EDC1FAB129599D560006D4D4 /* Assets.xcassets in Resources */,
+				EDC1FAC129599E3F0006D4D4 /* README.md in Resources */,
 				EDC1FAAF29599D540006D4D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
